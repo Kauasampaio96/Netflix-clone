@@ -1,0 +1,399 @@
+/*GERAL*/
+
+body{
+    background-color: #000;
+    height: 100%;
+}
+
+section{
+    margin-bottom: -100px;
+    position: relative;
+}
+
+section:hover{
+    z-index: 10;
+}
+
+
+.btn-cust-white{
+    background-color: #fff;
+    outline: none;
+    margin-right: 10px;
+}
+
+.btn-cust-translucent{
+    background-color:rgba(255, 255, 255, 0.40);
+    color: #fff;
+}
+
+.btn-cust-translucent:hover{
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.3s ease-in
+}
+
+.btn-cust-white:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in
+}
+
+.btn-custom-round{
+    padding: 7px 12px  !important;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.btn-custom-round:hover{
+   opacity: 0.8;
+   transition: 0.3s;
+}
+
+.btn-custom-circle{
+    padding: 7px 12px  !important;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.btn-custom-circle:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+ }
+
+.btn-custom-round img{
+    margin-bottom: 3px;
+}
+
+.btn-custom-circle img{
+    margin-bottom: 3px;
+}
+
+.opacity-50{
+    opacity: 0.6;
+}
+
+#hero-info button{
+    height: 50px;
+    text-align: center;
+}
+
+#hero-info button img{
+    margin-right: 5px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+
+
+/*LOGIN*/
+
+.bg-filmes{
+    background: url(assets/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.header-login{
+    padding: 0px 50px;
+    background:linear-gradient(
+        180deg,
+        rgba(0,0,0, 0.69) 0%,
+        rgba(0,0,0,0) 100%
+    );
+   
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    top:0px;
+    z-index: 2;
+    width:100%;
+    background:linear-gradient(
+        180deg,
+        rgba(0,0,0, 0.69) 0%,
+        rgba(0,0,0,0) 100%
+    );
+}
+
+header img{
+    width: 180px;
+
+}
+
+#caixa-login{
+    max-width: 450px;
+    background: rgba(0,0,0,0.70);
+    margin-top: 100px;
+}
+
+form{
+    padding: 60px 40px;
+}
+
+
+form #email, #senha{
+    background: #333333;
+    border: 0;
+    padding: 30px 20px;
+    height: 50px;
+    color: #838C82;
+    outline: none;
+}
+
+form #email:focus, #senha:focus{
+    border-bottom: 2px solid #E97D02;
+    transition: all .2s ease-in-out;
+}
+
+form #botao{
+    background: #E50914;
+    border: 0;
+}
+
+
+
+/*HOME*/
+
+.menu-list{
+    list-style: none;
+    padding-left: 0%;
+    padding-top: 15px;
+    margin-top: 25px;
+    margin-left: 0px;
+}
+
+.menu-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu-list li a{
+    color: #fff;
+    font-size: 17px;
+}
+
+.menu-list li a:hover{
+    color: #b5b5b5;
+    transition: 0.3s linear;
+    text-decoration: none;
+}
+
+#hero{
+    height: 880px;
+    background-image: url(assets/capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+
+
+#hero::after{
+    content: '';
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: calc(880px - 350px);
+}
+
+#hero-info{
+    padding: 0;
+    margin-top: 170px;
+    position: relative;
+    z-index: 3;
+    
+}
+
+#hero-info img.logo{
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+#hero-info h1{
+    margin-bottom: 20px;
+}
+
+#hero-info h1 img{
+   width: 35px;
+   margin-bottom: 10px;
+}
+
+#hero-info p{
+    font-weight: 600;
+}
+
+#main-content{
+    margin-top:750px;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+#main-content .top-10-filme{
+    overflow-x: hidden;
+    list-style: none;
+    white-space: nowrap;
+    padding: 20px 0;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.top-10-filme::-webkit-scrollbar{
+    display: none;
+}
+
+.top-10-filme .top{
+    display: inline-block;    
+    margin-right: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+
+    overflow: auto;
+    border: 1px solid transparent;
+}
+
+.top-10-filme .top:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transform: scale(1.1);
+    position: relative;
+    z-index: 999    ;
+    transition: 0.5s;
+}
+
+.top:hover .info-top{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.info-top {
+    background-color: #171717;
+    padding: 10px;
+    height: 120px;
+    width: 100%;
+
+    transform: scale(0);
+}
+
+.info-top .col-12{
+    margin-top: 5px;
+}
+
+.info-top .col-12:first-child {
+    padding-left: 0;
+}
+
+.info-top p{
+    color: #7E7B7B;
+    font-size: 15px;
+}
+
+.info-top p text {
+    color: #fff;
+}
+
+/*MODAL*/
+
+.modal-dialog, .modal-content{
+    background-color: #171717;
+}
+
+.modal-dialog{
+    max-width: 800px;
+}
+
+.modal-hero .btn-lg .btn-custom-circle, .btn-custom-round{
+    padding: 10px 16px !important;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.modal-hero .btn-cust-white{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+   
+}
+
+
+.modal-hero {
+    height: 300px;
+    background-image: url(assets/capa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.modal-hero::after{
+    content: '';
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: linear-gradient(180deg, rgba(23,23,23,0) 0%, #171717 100%);
+    position: absolute;
+    left: 0;
+    margin-top: -135px;
+    z-index: 1;
+}
+
+.modal-hero .modal-img{
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.modal-hero-info{
+    position: relative;
+    z-index: 2;
+}
+
+.filme-descricao{
+    font-size: 15px;
+    color: #fff;
+}
+
+.filme-elenco{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+
+.filme-elenco text{
+    color: #fff;
+}
+
+
+.lista-episodeos{
+    list-style: none;
+    padding: 0;
+}
+
+.lista-episodeos li:hover{
+    cursor: pointer;
+    background: rgba(255,255,255, 0.05);
+}
+
+.lista-episodeos li{
+    padding: 20px;
+}
+
+
+.lista-episodeos li p{
+    font-size: 13px;
+}
+
