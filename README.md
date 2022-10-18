@@ -8,6 +8,14 @@
  <img src="to_readme_net2.gif">
 </div>
 
+<div align="center">
+ <img src="to_readme.png">
+ <img src="to_readme2.png">
+ <img src="to_readme3.png">
+ <img src="to_readme4.png">
+</div>
+
+
 
 ## 👨‍💻 Sobre o projeto:
 <a href="https://clonenetflixkauachaves.netlify.app/">Hospedagem</a>
