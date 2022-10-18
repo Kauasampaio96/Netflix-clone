@@ -1,5 +1,14 @@
 # Clone da Plataforma da Netflix
 
+<div align="center">
+ <img src="to_readme_net.gif">
+</div>
+
+<div align="center">
+ <img src="to_readme_net2.gif">
+</div>
+
+
 ## 👨‍💻 Sobre o projeto:
 <a href="https://kauasampaio96.github.io/projeto-netflix-completo-frontend/">Hospedagem</a>
 <p>
